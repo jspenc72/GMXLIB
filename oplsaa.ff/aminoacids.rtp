@@ -1647,3 +1647,32 @@ HD23	    opls_140	 0.060	    1
     CD2	   HD22
     CD2	   HD23
 
+; Terminal methyl group
+[ CH3 ]
+    [ atoms ]
+        C      opls_135   -0.180     1
+        H1     opls_140    0.060     1
+        H2     opls_140    0.060     1
+        H3     opls_140    0.060     1
+    [ bonds ]
+        C      H1
+        C      H2
+        C      H3
+    [ angles ]
+        H1     C      H2
+        H2     C      H3
+        H1     C      H3
+
+; Methylene group in the middle of a linear alkane
+[ CH2 ]
+    [ atoms ]
+        C      opls_136    -0.120     1
+        H1     opls_140     0.060     1
+        H2     opls_140     0.060     1
+    [ bonds ]
+        -C      C
+        C      H1
+        C      H2
+        C      +C
+    [ angles ]
+        H1     C      H2
